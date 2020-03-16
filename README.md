@@ -7,7 +7,7 @@ This game engine is a hobby project to improve my understanding of ES6 and moder
 
 If you're interested in learning the fundementals of modern JavaScript app development (ES6, webpack), without the overhead of learning specific frameworks, this game engine is for you.
 
-### Why not a real framework?
+### Why not another framework?
 
 This project serves as a stepping stone of a migration from legacy web development (jQuery, ES5) along my path to adopt a more robust, modern framework (React, Vue). I'm a strong believer in understanding why features in frameworks should exist. What problems are these frameworks solving?
 
