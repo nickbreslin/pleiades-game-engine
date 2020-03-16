@@ -2,18 +2,18 @@
 import 'css/main.css';
 
 
-// Components
-import Character, { calcLevel } from './components/Character';
+import Engine from './engine/Engine';
+
+// app
+// view
+// component
+// engine
 
 
-const myCharacter = new Character();
-
-const main = () => {
-    console.log(myCharacter.health);
-
-    const level = calcLevel( 100 );
-    console.log(level);
+if ( document.readyState === 'complete' ||
+    ( document.readyState !== 'loading' && !document.documentElement.doScroll )
+) {
+	Engine();
+} else {
+  document.addEventListener('DOMContentLoaded', Engine());
 }
-
-
-main();
