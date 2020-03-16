@@ -1,4 +1,4 @@
-import Log from './Log';
+import log from './Log';
 import * as settingsJson from './../data/settings.json';
 
 
@@ -22,6 +22,7 @@ settingsData.get = ( key ) => {
 	    return settingsData.data[key];
     }
 
+    // not using `log` here to prevent a chicken-egg situation
 	console.warn('Requested setting missing: ' +  key );
 
 	return '';

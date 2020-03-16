@@ -3,7 +3,7 @@
   filtering in the console.
 */
 
-function Log(message, component = 'default') {
+function log(message, component = 'default') {
 
 	const componentColor = logConfig.getComponentColor( component );
 	console.log(
@@ -14,7 +14,7 @@ function Log(message, component = 'default') {
 	);
 }
 
-export default Log;
+export default log;
 
 
 

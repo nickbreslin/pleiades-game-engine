@@ -1,10 +1,14 @@
-import Log from './Log';
+import log from './Log';
 import UI from './UI';
 
-function Engine() {
-	Log(`Pleiades start up sequence engaged.`, 'Engine');
+import Game from './Game';
 
+function Engine() {
+	log(`Pleiades start up sequence engaged.`, 'Engine');
+
+	Game.load();
 	UI.setMeta();
+
 }
 
 export default Engine;
